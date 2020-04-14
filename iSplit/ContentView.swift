@@ -75,11 +75,11 @@ struct ContentView: View {
                     } .pickerStyle(SegmentedPickerStyle())
                 }
                 Section(header: Text("Check amount")) {
-                    Text("Tip: \(onlyTip, specifier: "%.2f")$")
+                    Text("Tip: $\(onlyTip, specifier: "%.2f")")
                 }
-                Text("Total: \(totalCheckAmountWithTip, specifier: "%.2f")$")
+                Text("Total: $\(totalCheckAmountWithTip, specifier: "%.2f")")
                     .font(.headline)
-                Text("Per Person: \(amountPerPerson, specifier: "%.2f")$")
+                Text("Per Person: $\(amountPerPerson, specifier: "%.2f")")
                     .font(.headline)
             }
             .navigationBarTitle("iSplit", displayMode: .large)
